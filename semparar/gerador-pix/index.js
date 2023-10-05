@@ -10,7 +10,7 @@ app.use(helmet());
 app.use(bodyParser.json());
 app.set('view engine', 'handlebars');
 
-const port = process.env.PORT || 8000;
+const port = 8000;
 const QR_CODE_SIZE = 400;
 
 app.post('/emvqr-static', (req, res) => {
