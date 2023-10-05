@@ -14,7 +14,7 @@
     "dev": "node server.js",
     "start-ui": "node server.js", 
     "start-api": "node gerador-pix/index.js",
-    "start": "concurrently \"npm run start-ui\" \"npm run start-api\"",
+  "start": "node_modules/.bin/concurrently \"npm run start-api\" \"npm run start-ui\"",
     "pastas": "npm i && cd gerador-pix && npm ci "
   },
   "devDependencies": {
